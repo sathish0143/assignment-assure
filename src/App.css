@@ -1,38 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&family=Libre+Baskerville:wght@700&display=swap");
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App nav,
+.count,
+.search,
+.right {
   display: flex;
-  flex-direction: column;
+}
+.App nav {
+  background-color: #001c7b;
+  justify-content: space-between;
+  height: 50px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.logo h1 {
+  font-family: "Libre Baskerville", serif;
+  color: #027982;
+  margin-left: 20px;
+}
+#S {
+  color: #027982;
+}
+.logo b {
+  color: red;
+  font-size: 30px;
+}
+.search {
+  align-items: center;
+}
+.search img {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+  filter: invert();
+}
+.search input {
+  background: transparent;
+  border: none;
+  border-bottom: 0.5px solid rgb(170, 170, 170);
+  width: 100px;
+}
+.count {
+  margin-right: 20px;
+}
+.count h1 {
+  font-size: 20px;
+  padding: 4px 20px;
+  margin-left: 10px;
+}
+#male {
+  background-color: #92d050;
+}
+#female {
+  background-color: #ff0000;
   color: white;
+  margin-left: 5px;
+}
+main {
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+.burger {
+  position: absolute;
+  background-color: #00b8f1;
+  height: 100%;
+  width: 50px;
+}
+.burger img {
+  margin-top: 10px;
+  filter: contrast(0.5);
+}
+.profile img {
+  width: 50%;
+}
+#card-area {
+  margin-top: 20px;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-temp {
+  background-color: #d9d9d9;
+  padding: 5px;
+  margin-top: 5px;
+}
+.card-temp div {
+  display: flex;
+  justify-content: space-between;
+}
+.card-temp h3 {
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
+.card {
+  background-color: #7f7f7f;
+  padding: 5px;
+}
+.card div {
+  display: flex;
+  justify-content: space-between;
+}
+.card h3 {
+  font-weight: 400;
+  color: white;
+  font-size: 18px;
+}
+.setting {
+  display: flex;
+  justify-content: space-between;
+}
+.sts {
+  text-align: initial;
+  margin-top: 10px;
+}
+.main-right {
+  display: flex;
+  width: 100%;
+  margin-left: 50px;
+}
+
+.events {
+  width: 50%;
+  overflow-y: auto;
+  border: 6px solid #d9d9d9;
+  height: 100vh;
+  padding: 5px;
+  font-size: 12px;
+}
+.events img {
+  width: 30px;
+}
+
+.details {
+  width: 50%;
+
+  text-align: initial;
+
+  padding: 20px;
+}
+.details h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.top {
+  font-size: 12px;
+  margin-top: 50px;
+}
+.discription,
+.info {
+  margin-top: 30px;
+}
+.discription {
+  padding-right: 60px;
+}
+.profile {
+  text-align: initial;
+  width: 50%;
+
+  font-size: 12px;
+  margin-right: 50px;
+}
+.profile h1 {
+  margin-top: 10px;
+}
+.profile img {
+  width: 100%;
+  padding-right: 50px;
+  margin-top: 10px;
 }
